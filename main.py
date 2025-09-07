@@ -4,7 +4,7 @@ from setting import (
     WINDOW_WIDTH,
     WINDOW_HEIGHT,
     camera_pos,
-    zone_rect,
+    camera_zone_rect,
     player_pos,
     player_radius,
     player_speed,
@@ -21,10 +21,10 @@ window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 drawing = Drawing(window)
 clock = pygame.time.Clock()
 
-camera = Camera("c", camera_pos, zone_rect)
+camera = Camera("c", camera_pos, camera_zone_rect)
 player = Player("p", player_pos, player_radius, player_speed, player_angle)
 
-drawing.set_game_map(dict_rooms["room_1"])
+drawing.set_game_map(dict_rooms["test_room"])
 drawing.set_camera(camera)
 drawing.set_player(player)
 

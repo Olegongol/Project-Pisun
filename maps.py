@@ -1,7 +1,7 @@
 from wall import Wall
 from setting import BLOCK_SIDE
 
-room_1 = [
+test_room = [
     "w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w",
     "w . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . w",
     "w . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . w",
@@ -24,7 +24,7 @@ room_1 = [
     "w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w"]
 
 text_maps = {
-    "room_1": room_1
+    "test_room": test_room
 }
 
 dict_rooms = {}
