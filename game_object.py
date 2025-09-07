@@ -1,9 +1,8 @@
-class GameObject():
-    def __init__(self, type: str, pos=(0, 0), angle=0.0):
-        self.type = type
-        self.x, self.y = pos
-        self.angle = angle
+class GameObject:
+    def __init__(self, type_: str, pos: tuple[int, int]):
+        self.type = type_
+        self.x, self.y = float(pos[0]), float(pos[1])
 
     @property
-    def pos(self):
+    def pos(self) -> tuple[float, float]:
         return (self.x, self.y)
